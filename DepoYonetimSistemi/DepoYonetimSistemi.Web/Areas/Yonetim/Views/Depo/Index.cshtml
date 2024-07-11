@@ -1,0 +1,49 @@
+﻿@using DepoYonetimSistemi.EntityLayer
+@model List<Depo>
+@{
+    ViewBag.Title = "Depo Listesi";
+}
+
+<br />
+<div class="row">
+    <div class="col-md-12">
+        <h2>Depo Listesi</h2>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Ad</th>
+                    <th>
+                        <a href="@Url.Action("Insert","Depo")" class="btn btn-primary btn-sm">
+                            <i class="fa fa-plus-circle"> Depo Ekle</i>
+                        </a>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="align-middle">@item.Id</td>
+                        <td class="align-middle">@item.Ad</td>
+                        <td class="align-middle">
+                            <a href="@Url.Action("Delete","Depo", new {id = item.Id})" class="btn btn-danger">
+                                <i class="fa fa-trash">Sil</i>
+                            </a>
+                            <a href="@Url.Action("Update", "Depo", new {id = item.Id})" class="btn btn-success">
+                                <i class="fa fa-pencil"> Düzenle</i>
+                            </a>
+                        </td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+

@@ -1,0 +1,20 @@
+﻿@model System.Exception
+@{
+    ViewBag.Title = "Hata Sayfası";
+}
+
+<div class="row">
+    <div class="col-12 text-center">
+        <i class="fa fa-exclamation-triangle fa-3x text-warning"></i>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12 text-center text-danger">
+        Hata Oluştu!!
+    </div>
+</div>
+<div class="row">
+    <div class="col-12 text-center">
+        @Model.Message
+    </div>
+</div>

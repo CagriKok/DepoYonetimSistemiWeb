@@ -1,0 +1,92 @@
+﻿@using DepoYonetimSistemi.EntityLayer
+@model Kullanici
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+
+    <style>
+        body {
+            background-image: url('https://picsum.photos/id/1060/1920/1080');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+            body > div {
+                background-color: rgba(27, 94, 32, .4);
+            }
+
+        .login {
+            border-radius: 15px;
+            overflow: hidden;
+            background-color: rgba(255,255,255, .7);
+            box-shadow: 10px 10px 10px rgba(0,0,0,.5);
+        }
+
+        .login-left {
+            border-right: 1px solid #AAA;
+        }
+
+            .login-left img {
+                width: 200px;
+            }
+
+        .login-right {
+        }
+
+        .fa {
+            width: 16px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="d-flex align-items-center" style="height:100vh;">
+        <div class="m-auto col-md-8 col-lg-5">
+            <div class="row login">
+                <div class="col-md-4 d-flex justify-content-center login-left text-center">
+                    <img class="img-fluid align-self-center" src="~/Images/Accountt.png" />
+                </div>
+                <div class="col-md-8 py-4 login-right">
+                    <h4 class="text-center mb-4">Lütfen Giriş Yapınız</h4>
+                    <hr />
+                    @using (Html.BeginForm("Index", "Login", FormMethod.Post))
+                    {
+                        @Html.AntiForgeryToken()
+                        <div class="input-group mb-2">
+                            <span class="input-group-text"><i class="fa fa-user"></i></span>
+                            @Html.TextBoxFor(x => x.EPosta, new { @class = "form-control", placeholder = "E Posta Adresi" })
+                        </div>
+                        <div class="input-group mb-2">
+                            <span class="input-group-text"><i class="fa fa-key"></i></span>
+                            @Html.PasswordFor(x => x.Parola, new { @class = "form-control", placeholder = "Parola" })
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-sm-12">
+                                @Html.ValidationMessage("userinfo", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col-sm-12 text-end">
+                                <button type="submit" class="btn btn-success">Giriş</button>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/Scripts/jquery-3.7.0.min.js"></script>
+    <script src="~/Scripts/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+﻿@using DepoYonetimSistemi.EntityLayer
+@model DepoHareket
+@{
+    ViewBag.Title = "Depo Hareket Ekle";
+}
+
+<div class="row">
+    <div class="col-12">
+        <h3>Depo Hareketi Ekle</h3>
+    </div>
+</div>
+<hr />
+@using (Html.BeginForm("Insert", "DepoHareket", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    <div class="row mb-2">
+        @Html.LabelFor(x => x.MalTurId, new { @class = "col-sm-2 col-form-label" })
+        <div class="col-sm-10">
+            @Html.DropDownListFor(x => x.MalTurId, ViewBag.MalTurleri as SelectList, "Mal Türü Seçiniz...", new { @class = "form-select" })
+            @Html.ValidationMessageFor(x => x.MalTurId, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="row mb-2">
+        @Html.LabelFor(x => x.DepoId, new { @class = "col-sm-2 col-form-label" })
+        <div class="col-sm-10">
+            @Html.DropDownListFor(x => x.DepoId, ViewBag.Depolar as SelectList, "Depo Seçiniz...", new { @class = "form-select" })
+            @Html.ValidationMessageFor(x => x.DepoId, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="row mb-2">
+        @Html.LabelFor(x => x.HareketTipleri, new { @class = "col-sm-2 col-form-label" })
+        <div class="col-sm-10">
+            @Html.EnumDropDownListFor(x => x.HareketTipleri, new { @class = "form-select" })
+            @Html.ValidationMessageFor(x => x.HareketTipleri, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="row mb-2">
+        @Html.LabelFor(x => x.TarihSaat, new { @class = "col-sm-2 col-form-label" })
+        <div class="col-sm-10">
+            @Html.TextBoxFor(x => x.TarihSaat, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.TarihSaat, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="row mb-2">
+        @Html.LabelFor(x => x.Miktar, new { @class = "col-sm-2 col-form-label" })
+        <div class="col-sm-10">
+            @Html.TextBoxFor(x => x.Miktar, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.Miktar, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="row mb-2">
+        @Html.LabelFor(x => x.Birim, new { @class = "col-sm-2 col-form-label" })
+        <div class="col-sm-10">
+            @Html.EnumDropDownListFor(x => x.Birim, new { @class = "form-select" })
+            @Html.ValidationMessageFor(x => x.Birim, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="row mb-2">
+        @Html.LabelFor(x => x.Aciklama, new { @class = "col-sm-2 col-form-label" })
+        <div class="col-sm-10">
+            @Html.TextAreaFor(x => x.Aciklama, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.Aciklama, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <div class="offset-sm-2 col-sm-10">
+            <a href="@Url.Action("Index", "DepoHareket")" class="btn btn-danger"><i class="fa fa-thumbs-down"></i> İptal</a>
+            <button type="submit" class="btn btn-primary"><i class="fa fa-thumbs-up"></i> Kaydet</button>
+        </div>
+    </div>
+}
+

@@ -1,0 +1,31 @@
+﻿@using DepoYonetimSistemi.EntityLayer
+@model DepoHareket
+@{
+    ViewBag.Title = "Depo Hareket Sil";
+}
+
+<div class="row">
+    <div class="col-12">
+        <h3>Depo Hareketi Sil</h3>
+    </div>
+</div>
+<hr />
+
+@using (Html.BeginForm("Delete", "DepoHareket", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    <div class="row mb-2">
+        <div class="col-12">
+            <p><b>@Model.Depo.Ad</b> adlı depodaki <b>@Model.TarihSaat.ToShortDateString()</b> tarihli <b>@Model.Miktar.ToString("N2") @Model.Birim</b> miktarlı <b>@Model.MalTur.Ad</b> depo hareketini silmek istiyor musunuz?</p>
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <div class="col-sm-12">
+            <a href="@Url.Action("Index", "DepoHareket")" class="btn btn-danger"><i class="fa fa-thumbs-down"></i> İptal</a>
+            <button type="submit" class="btn btn-primary"><i class="fa fa-thumbs-up"></i> Kaydet</button>
+        </div>
+    </div>
+}
+
+

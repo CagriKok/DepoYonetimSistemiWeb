@@ -1,0 +1,116 @@
+﻿@using DepoYonetimSistemi.EntityLayer.Enums
+@using DepoYonetimSistemi.Web.Models
+@model DashBoardModel
+@{
+    ViewBag.Title = "DashBoard";
+}
+<br />
+<div class="row">
+    <div class="col-md-12">
+        <h2>Dashboard</h2>
+    </div>
+</div>
+<hr />
+<div class="row mb-5">
+    <div class="col-md-4">
+        <div class="card bg-success text-bg-success">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-auto my-auto">
+                        <h6 class="card-text">Depo Sayısı</h6>
+                    </div>
+                    <div class="col my-auto">
+                        <h1 class="card-text text-end">@Model.DepoAdet</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card bg-info text-bg-info">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-auto my-auto">
+                        <h6 class="card-text">Toplam Giriş Adet</h6>
+                    </div>
+                    <div class="col my-auto">
+                        <h1 class="card-text text-end">@Model.TopGirisAdet</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card bg-warning text-bg-warning">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-auto my-auto">
+                        <h6 class="card-text">Toplam Çıkış Adet</h6>
+                    </div>
+                    <div class="col my-auto">
+                        <h1 class="card-text text-end">@Model.TopCikisAdet</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@*<hr />*@
+<div class="row mt-5">
+    <div class="col-md-12">
+        <h5>Bugünkü Giriş/Çıkış Hareketleri</h5>
+    </div>
+</div>
+<hr />
+<div class="row">
+    <div class="col-md-12">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Depo</th>
+                    <th>Mal Tür</th>
+                    <th>Hareket Tip</th>
+                    <th>Tarih</th>
+                    <th>Miktar</th>
+                    <th>Açıklama</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.BugunHareketleri.Count == 0)
+                {
+                    <tr>
+                        <td colspan="7" class="align-middle text-center">
+                            <span class="text-danger">Listelenecek depo hareketi bulunamadı...</span>
+                        </td>
+                    </tr>
+                }
+                else
+                {
+                    foreach (var item in Model.BugunHareketleri)
+                    {
+                        <tr>
+                            <td class="align-middle">@item.Id</td>
+                            <td class="align-middle">@item.Depo.Ad</td>
+                            <td class="align-middle">@item.MalTur.Ad</td>
+                            <td class="align-middle">
+                                @if (item.HareketTipleri ==DepoHareketTipleri.Giris)
+                                {
+                                    <span class="badge rounded-pill text-bg-info">Giriş</span>
+                                }
+                                else
+                                {
+                                    <span class="badge rounded-pill text-bg-warning">Çıkış</span>
+                                }
+                            </td>
+                            <td class="align-middle">@item.TarihSaat.ToShortDateString()</td>
+                            <td class="align-middle">@item.Miktar.ToString("N2") @item.Birim</td>
+                            <td class="align-middle">@item.Aciklama</td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+

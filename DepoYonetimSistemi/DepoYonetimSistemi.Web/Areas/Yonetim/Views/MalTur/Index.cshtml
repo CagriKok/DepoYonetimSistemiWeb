@@ -1,0 +1,49 @@
+﻿@using DepoYonetimSistemi.EntityLayer
+@model List<MalTur>
+
+@{
+    ViewBag.Title = "Mal Türü Listesi";
+}
+<br />
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>Mal Türü Listesi</h2>
+    </div>
+</div>
+<hr />
+<div class="row">
+    <div class="col-md-12">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Mal Türü Adı</th>
+                    <th>
+                        <a href="@Url.Action("Insert", "MalTur")" class="btn btn-sm btn-primary">
+                            <i class="fa fa-plus-circle"></i> Mal Türü Ekle
+                        </a>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="align-middle">@item.Id</td>
+                        <td class="align-middle">@item.Ad</td>
+                        <td class="align-middle">
+                            <a href="@Url.Action("Delete", "MalTur", new {id = item.Id})" class="btn btn-sm btn-danger">
+                                <i class="fa fa-trash"></i> Sil
+                            </a>
+                            <a href="@Url.Action("Update", "MalTur", new {id = item.Id})" class="btn btn-sm btn-success">
+                                <i class="fa fa-pencil"></i> Düzenle
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+

@@ -1,0 +1,15 @@
+C:\Users\Warri\OneDrive\Masaüstü\MVCProje\DepoYonetimSistemi\DepoYonetimSistemi.DataAccessLayer\bin\Debug\DepoYonetimSistemi.DataAccessLayer.dll.config
+C:\Users\Warri\OneDrive\Masaüstü\MVCProje\DepoYonetimSistemi\DepoYonetimSistemi.DataAccessLayer\bin\Debug\DepoYonetimSistemi.DataAccessLayer.dll
+C:\Users\Warri\OneDrive\Masaüstü\MVCProje\DepoYonetimSistemi\DepoYonetimSistemi.DataAccessLayer\bin\Debug\DepoYonetimSistemi.DataAccessLayer.pdb
+C:\Users\Warri\OneDrive\Masaüstü\MVCProje\DepoYonetimSistemi\DepoYonetimSistemi.DataAccessLayer\bin\Debug\DepoYonetimSistemi.EntityLayer.dll
+C:\Users\Warri\OneDrive\Masaüstü\MVCProje\DepoYonetimSistemi\DepoYonetimSistemi.DataAccessLayer\bin\Debug\EntityFramework.dll
+C:\Users\Warri\OneDrive\Masaüstü\MVCProje\DepoYonetimSistemi\DepoYonetimSistemi.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Warri\OneDrive\Masaüstü\MVCProje\DepoYonetimSistemi\DepoYonetimSistemi.DataAccessLayer\bin\Debug\DepoYonetimSistemi.EntityLayer.pdb
+C:\Users\Warri\OneDrive\Masaüstü\MVCProje\DepoYonetimSistemi\DepoYonetimSistemi.DataAccessLayer\bin\Debug\DepoYonetimSistemi.EntityLayer.dll.config
+C:\Users\Warri\OneDrive\Masaüstü\MVCProje\DepoYonetimSistemi\DepoYonetimSistemi.DataAccessLayer\bin\Debug\EntityFramework.xml
+C:\Users\Warri\OneDrive\Masaüstü\MVCProje\DepoYonetimSistemi\DepoYonetimSistemi.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Warri\OneDrive\Masaüstü\MVCProje\DepoYonetimSistemi\DepoYonetimSistemi.DataAccessLayer\obj\Debug\DepoYonetimSistemi.DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\Warri\OneDrive\Masaüstü\MVCProje\DepoYonetimSistemi\DepoYonetimSistemi.DataAccessLayer\obj\Debug\DepoYonetimSistemi.DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Warri\OneDrive\Masaüstü\MVCProje\DepoYonetimSistemi\DepoYonetimSistemi.DataAccessLayer\obj\Debug\DepoYone.DB78C48D.Up2Date
+C:\Users\Warri\OneDrive\Masaüstü\MVCProje\DepoYonetimSistemi\DepoYonetimSistemi.DataAccessLayer\obj\Debug\DepoYonetimSistemi.DataAccessLayer.dll
+C:\Users\Warri\OneDrive\Masaüstü\MVCProje\DepoYonetimSistemi\DepoYonetimSistemi.DataAccessLayer\obj\Debug\DepoYonetimSistemi.DataAccessLayer.pdb

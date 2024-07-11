@@ -1,0 +1,32 @@
+﻿@using DepoYonetimSistemi.EntityLayer
+@model MalTur
+
+@{
+    ViewBag.Title = "Mal Türü Ekle";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>Mal Türü Ekle</h2>
+    </div>
+</div>
+<hr />
+@using (Html.BeginForm("Insert", "MalTur", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    <div class="row mb-2">
+        @Html.LabelFor(x => x.Ad, new { @class = "col-sm-2 col-form-label" })
+        <div class="col-sm-10">
+            @Html.TextBoxFor(x => x.Ad, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.Ad, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <div class="offset-sm-2 col-sm-10">
+            <a href="@Url.Action("Index", "MalTur")" class="btn btn-danger">
+            <i class="fa fa-thumbs-down"></i> İptal</a>
+            <button type="submit" class="btn btn-primary"><i class="fa fa-thumbs-up"></i> Kaydet</button>
+        </div>
+    </div>
+}

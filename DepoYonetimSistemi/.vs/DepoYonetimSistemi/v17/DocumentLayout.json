@@ -1,0 +1,113 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Warri\\OneDrive\\Masa\u00FCst\u00FC\\MVCProje\\DepoYonetimSistemi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F093AA6C-00F4-46D4-B8A6-01F52F3F3D82}|DepoYonetimSistemi.Web\\DepoYonetimSistemi.Web.csproj|c:\\users\\warri\\onedrive\\masa\u00FCst\u00FC\\mvcproje\\depoyonetimsistemi\\depoyonetimsistemi.web\\areas\\yonetim\\controllers\\kullanicicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F093AA6C-00F4-46D4-B8A6-01F52F3F3D82}|DepoYonetimSistemi.Web\\DepoYonetimSistemi.Web.csproj|solutionrelative:depoyonetimsistemi.web\\areas\\yonetim\\controllers\\kullanicicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F093AA6C-00F4-46D4-B8A6-01F52F3F3D82}|DepoYonetimSistemi.Web\\DepoYonetimSistemi.Web.csproj|C:\\Users\\Warri\\OneDrive\\Masa\u00FCst\u00FC\\MVCProje\\DepoYonetimSistemi\\depoyonetimsistemi.web\\areas\\yonetim\\controllers\\depocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F093AA6C-00F4-46D4-B8A6-01F52F3F3D82}|DepoYonetimSistemi.Web\\DepoYonetimSistemi.Web.csproj|solutionrelative:depoyonetimsistemi.web\\areas\\yonetim\\controllers\\depocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33E06386-93DF-4BB6-B41F-375271F74EB8}|DepoYonetimSistemi.DataAccessLayer\\DepoYonetimSistemi.DataAccessLayer.csproj|C:\\Users\\Warri\\OneDrive\\Masa\u00FCst\u00FC\\MVCProje\\DepoYonetimSistemi\\depoyonetimsistemi.dataaccesslayer\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33E06386-93DF-4BB6-B41F-375271F74EB8}|DepoYonetimSistemi.DataAccessLayer\\DepoYonetimSistemi.DataAccessLayer.csproj|solutionrelative:depoyonetimsistemi.dataaccesslayer\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33E06386-93DF-4BB6-B41F-375271F74EB8}|DepoYonetimSistemi.DataAccessLayer\\DepoYonetimSistemi.DataAccessLayer.csproj|C:\\Users\\Warri\\OneDrive\\Masa\u00FCst\u00FC\\MVCProje\\DepoYonetimSistemi\\depoyonetimsistemi.dataaccesslayer\\dbcontext\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33E06386-93DF-4BB6-B41F-375271F74EB8}|DepoYonetimSistemi.DataAccessLayer\\DepoYonetimSistemi.DataAccessLayer.csproj|solutionrelative:depoyonetimsistemi.dataaccesslayer\\dbcontext\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33E06386-93DF-4BB6-B41F-375271F74EB8}|DepoYonetimSistemi.DataAccessLayer\\DepoYonetimSistemi.DataAccessLayer.csproj|C:\\Users\\Warri\\OneDrive\\Masa\u00FCst\u00FC\\MVCProje\\DepoYonetimSistemi\\depoyonetimsistemi.dataaccesslayer\\abstracts\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33E06386-93DF-4BB6-B41F-375271F74EB8}|DepoYonetimSistemi.DataAccessLayer\\DepoYonetimSistemi.DataAccessLayer.csproj|solutionrelative:depoyonetimsistemi.dataaccesslayer\\abstracts\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "KullaniciController.cs",
+              "DocumentMoniker": "C:\\Users\\Warri\\OneDrive\\Masa\u00FCst\u00FC\\MVCProje\\DepoYonetimSistemi\\DepoYonetimSistemi.Web\\Areas\\Yonetim\\Controllers\\KullaniciController.cs",
+              "RelativeDocumentMoniker": "DepoYonetimSistemi.Web\\Areas\\Yonetim\\Controllers\\KullaniciController.cs",
+              "ToolTip": "C:\\Users\\Warri\\OneDrive\\Masa\u00FCst\u00FC\\MVCProje\\DepoYonetimSistemi\\DepoYonetimSistemi.Web\\Areas\\Yonetim\\Controllers\\KullaniciController.cs",
+              "RelativeToolTip": "DepoYonetimSistemi.Web\\Areas\\Yonetim\\Controllers\\KullaniciController.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAA5wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T16:13:15.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DepoController.cs",
+              "DocumentMoniker": "C:\\Users\\Warri\\OneDrive\\Masa\u00FCst\u00FC\\MVCProje\\DepoYonetimSistemi\\DepoYonetimSistemi.Web\\Areas\\Yonetim\\Controllers\\DepoController.cs",
+              "RelativeDocumentMoniker": "DepoYonetimSistemi.Web\\Areas\\Yonetim\\Controllers\\DepoController.cs",
+              "ToolTip": "C:\\Users\\Warri\\OneDrive\\Masa\u00FCst\u00FC\\MVCProje\\DepoYonetimSistemi\\DepoYonetimSistemi.Web\\Areas\\Yonetim\\Controllers\\DepoController.cs",
+              "RelativeToolTip": "DepoYonetimSistemi.Web\\Areas\\Yonetim\\Controllers\\DepoController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T16:13:01.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\Warri\\OneDrive\\Masa\u00FCst\u00FC\\MVCProje\\DepoYonetimSistemi\\DepoYonetimSistemi.DataAccessLayer\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "DepoYonetimSistemi.DataAccessLayer\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\Warri\\OneDrive\\Masa\u00FCst\u00FC\\MVCProje\\DepoYonetimSistemi\\DepoYonetimSistemi.DataAccessLayer\\UnitOfWork.cs",
+              "RelativeToolTip": "DepoYonetimSistemi.DataAccessLayer\\UnitOfWork.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAkwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T16:12:34.593Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Warri\\OneDrive\\Masa\u00FCst\u00FC\\MVCProje\\DepoYonetimSistemi\\DepoYonetimSistemi.DataAccessLayer\\DBContext\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "DepoYonetimSistemi.DataAccessLayer\\DBContext\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Warri\\OneDrive\\Masa\u00FCst\u00FC\\MVCProje\\DepoYonetimSistemi\\DepoYonetimSistemi.DataAccessLayer\\DBContext\\AppDbContext.cs",
+              "RelativeToolTip": "DepoYonetimSistemi.DataAccessLayer\\DBContext\\AppDbContext.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T16:12:31.229Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Warri\\OneDrive\\Masa\u00FCst\u00FC\\MVCProje\\DepoYonetimSistemi\\DepoYonetimSistemi.DataAccessLayer\\Abstracts\\IRepository.cs",
+              "RelativeDocumentMoniker": "DepoYonetimSistemi.DataAccessLayer\\Abstracts\\IRepository.cs",
+              "ToolTip": "C:\\Users\\Warri\\OneDrive\\Masa\u00FCst\u00FC\\MVCProje\\DepoYonetimSistemi\\DepoYonetimSistemi.DataAccessLayer\\Abstracts\\IRepository.cs",
+              "RelativeToolTip": "DepoYonetimSistemi.DataAccessLayer\\Abstracts\\IRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T16:12:24.842Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

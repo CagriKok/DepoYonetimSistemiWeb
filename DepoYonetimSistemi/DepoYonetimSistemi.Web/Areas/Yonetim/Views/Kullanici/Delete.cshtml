@@ -1,0 +1,31 @@
+﻿@using DepoYonetimSistemi.EntityLayer
+@model Kullanici
+
+@{
+    ViewBag.Title = "Kullanıcı Sil";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>Kullanıcı Sil</h2>
+    </div>
+</div>
+<hr />
+@using (Html.BeginForm("Delete", "Kullanici", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="row mb-2">
+        <div class="col-12">
+            <p><b>@Model.AdSoyad</b> adlı kullanıcıyı silmek istiyor musunuz?</p>
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <div class="col-sm-12">
+            <a href="@Url.Action("Index", "Kullanici")" class="btn btn-danger"><i class="fa fa-thumbs-down"></i> İptal</a>
+            <button type="submit" class="btn btn-primary"><i class="fa fa-thumbs-up"></i> Kaydet</button>
+        </div>
+    </div>
+}
+

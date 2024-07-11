@@ -1,0 +1,92 @@
+﻿@using DepoYonetimSistemi.EntityLayer
+@using DepoYonetimSistemi.EntityLayer.Enums
+
+@model List<DepoHareket>
+@{
+    ViewBag.Title = "Depo Hareket Listesi";
+}
+<br />
+<div class="row">
+    <div class="col-12">
+        <h3>Depo Hareket Listesi</h3>
+    </div>
+</div>
+<hr />
+
+@using (Html.BeginForm("Index", "DepoHareket", FormMethod.Get, new { @class = "row-mb-2" }))
+{
+    <div class="col-auto">
+        <label for="depoId" class="col-form-label">Filtrele :</label>
+    </div>
+    <div class="col">
+        <div class="input-group">
+            @Html.DropDownList("depoId", ViewBag.Depolar as SelectList, new { @class = "form-select" })
+            <button type="submit" class="btn btn-sm btn-outline-info"><i class="fa fa-refresh"></i></button>
+        </div>
+    </div>
+}
+<hr />
+<div class="row">
+    <div class="col-12">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Depo</th>
+                    <th>Mal Türü</th>
+                    <th>Hareket Tip</th>
+                    <th>Tarih</th>
+                    <th>Miktar</th>
+                    <th>Açıklama</th>
+                    <th>
+                        <a href="@Url.Action("Insert", "DepoHareket")" class="btn btn-sm btn-primary">
+                            <i class="fa fa-plus-circle"></i> Depo Hareket Ekle
+                        </a>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.Count == 0)
+                {
+                    <tr>
+                        <td colspan="8" class="align-middle text-center">
+                            <span class="text-danger">Listelenecek depo hareketi bulunamadı...</span>
+                        </td>
+                    </tr>
+                }
+                else
+                {
+                    foreach (var item in Model)
+                    {
+                        <tr>
+                            <td class="align-middle">@item.Id</td>
+                            <td class="align-middle">@item.Depo.Ad</td>
+                            <td class="align-middle">@item.MalTur.Ad</td>
+                            <td class="align-middle">
+                                @if (item.HareketTipleri == DepoHareketTipleri.Giris)
+                                {
+                                    <span class="badge rounded-pill text-bg-info">Giriş</span>
+                                }
+                                else
+                                {
+                                    <span class="badge rounded-pill text-bg-warning">Çıkış</span>
+                                }
+                            </td>
+                            <td class="align-middle">@item.TarihSaat.ToShortDateString()</td>
+                            <td class="align-middle">@item.Miktar.ToString("N2") @item.Birim</td>
+                            <td class="align-middle">@item.Aciklama</td>
+                            <td class="align-middle">
+                                <a href="@Url.Action("Delete", "DepoHareket", new { id = item.Id })" class="btn btn-sm btn-danger">
+                                    <i class="fa fa-trash"></i> Sil
+                                </a>
+                                <a href="@Url.Action("Update", "DepoHareket", new { id = item.Id })" class="btn btn-sm btn-success">
+                                    <i class="fa fa-pencil"></i> Düzenle
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

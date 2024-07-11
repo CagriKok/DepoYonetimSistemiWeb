@@ -1,0 +1,63 @@
+﻿@using DepoYonetimSistemi.EntityLayer
+@using DepoYonetimSistemi.EntityLayer.Enums
+@model List<Kullanici>
+@{
+    ViewBag.Title = "Kullanıcı Listesi";
+}
+<br />
+<div class="row">
+    <div class="col-md-12">
+        <h2>Kullanıcı Listesi</h2>
+    </div>
+</div>
+<hr />
+
+<div class="row">
+    <div class="col-md-12">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Adı Soyadı</th>
+                    <th>E Posta</th>
+                    <th>Yetki</th>
+                    <th>
+                        <a href="@Url.Action("Insert", "Kullanici")" class="btn btn-sm btn-primary">
+                            <i class="fa fa-plus-circle"></i> Kullanıcı Ekle
+                        </a>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="align-middle">@item.Id</td>
+                        <td class="align-middle">@item.AdSoyad</td>
+                        <td class="align-middle">@item.EPosta</td>
+                        <td class="align-middle">
+                            @if (item.Yetkiler == KullaniciYetkiler.Admin)
+                            {
+                                <span>Admin</span>
+                            }
+                            else
+                            {
+                                <span>Depo Sorumlusu</span>
+                            }
+                        </td>
+                        <td class="align-middle">
+                            <a href="@Url.Action("Delete", "Kullanici", new {id = item.Id})" class="btn btn-sm btn-danger">
+                                <i class="fa fa-trash"></i> Sil
+                            </a>
+                            <a href="@Url.Action("Update", "Kullanici", new {id = item.Id})" class="btn btn-sm btn-success">
+                                <i class="fa fa-pencil"></i> Düzenle
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+

@@ -1,0 +1,32 @@
+﻿@using DepoYonetimSistemi.EntityLayer
+@model MalTur
+
+@{
+    ViewBag.Title = "Mal Türü Sil";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>Mal Türü Sil</h2>
+    </div>
+</div>
+<hr />
+@using (Html.BeginForm("Delete", "MalTur", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="row mb-2">
+        <div class="col-12">
+            <p><b>@Model.Ad</b> adlı mal türünü silmek istiyor musunuz?</p>
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <div class="col-sm-12">
+            <a href="@Url.Action("Index", "MalTur")" class="btn btn-danger">
+            <i class="fa fa-thumbs-down"></i> İptal</a>
+            <button type="submit" class="btn btn-primary"><i class="fa fa-thumbs-up"></i> Kaydet</button>
+        </div>
+    </div>
+}
+

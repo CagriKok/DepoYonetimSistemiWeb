@@ -1,0 +1,12 @@
+C:\Users\Warri\OneDrive\Masaüstü\MVCProje\DepoYonetimSistemi\DepoYonetimSistemi.EntityLayer\bin\Debug\DepoYonetimSistemi.EntityLayer.dll.config
+C:\Users\Warri\OneDrive\Masaüstü\MVCProje\DepoYonetimSistemi\DepoYonetimSistemi.EntityLayer\bin\Debug\DepoYonetimSistemi.EntityLayer.dll
+C:\Users\Warri\OneDrive\Masaüstü\MVCProje\DepoYonetimSistemi\DepoYonetimSistemi.EntityLayer\bin\Debug\DepoYonetimSistemi.EntityLayer.pdb
+C:\Users\Warri\OneDrive\Masaüstü\MVCProje\DepoYonetimSistemi\DepoYonetimSistemi.EntityLayer\bin\Debug\EntityFramework.dll
+C:\Users\Warri\OneDrive\Masaüstü\MVCProje\DepoYonetimSistemi\DepoYonetimSistemi.EntityLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Warri\OneDrive\Masaüstü\MVCProje\DepoYonetimSistemi\DepoYonetimSistemi.EntityLayer\bin\Debug\EntityFramework.xml
+C:\Users\Warri\OneDrive\Masaüstü\MVCProje\DepoYonetimSistemi\DepoYonetimSistemi.EntityLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Warri\OneDrive\Masaüstü\MVCProje\DepoYonetimSistemi\DepoYonetimSistemi.EntityLayer\obj\Debug\DepoYonetimSistemi.EntityLayer.csproj.AssemblyReference.cache
+C:\Users\Warri\OneDrive\Masaüstü\MVCProje\DepoYonetimSistemi\DepoYonetimSistemi.EntityLayer\obj\Debug\DepoYonetimSistemi.EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\Warri\OneDrive\Masaüstü\MVCProje\DepoYonetimSistemi\DepoYonetimSistemi.EntityLayer\obj\Debug\DepoYone.7907923A.Up2Date
+C:\Users\Warri\OneDrive\Masaüstü\MVCProje\DepoYonetimSistemi\DepoYonetimSistemi.EntityLayer\obj\Debug\DepoYonetimSistemi.EntityLayer.dll
+C:\Users\Warri\OneDrive\Masaüstü\MVCProje\DepoYonetimSistemi\DepoYonetimSistemi.EntityLayer\obj\Debug\DepoYonetimSistemi.EntityLayer.pdb
